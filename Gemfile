@@ -14,6 +14,18 @@ gem 'slim-rails'
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'bullet'
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'webmock'
+  gem 'did_you_mean'
+  gem 'faker'
 end
 
 group :development do
