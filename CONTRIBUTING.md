@@ -16,14 +16,22 @@ Few technical guidelines to follow:
 5. Receiving feedback.
 6. Merge!
 
-# Configure Your Local Development Environment
+## Configure Your Local Development Environment
 
 After cloned this repository, run the setup script:
 
 `bin/setup`
 
-# Testing
+## Testing
 
 Set up your development environment as previous section.
 
 Run `bin/rspec` to execute the full test suite.
+
+## Style Checks
+
+### Ruby
+
+https://github.com/bbatsov/rubocop/tree/v0.29.1
+
+Run style checks: `bundle exec rubocop -DR`
