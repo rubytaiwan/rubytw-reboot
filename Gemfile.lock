@@ -76,6 +76,7 @@ GEM
     columnize (0.9.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    database_rewinder (0.5.3)
     debug_inspector (0.0.2)
     did_you_mean (0.10.0)
       interception
@@ -246,6 +247,7 @@ DEPENDENCIES
   bullet
   capybara
   coffee-rails (~> 4.1.0)
+  database_rewinder
   did_you_mean
   factory_girl_rails
   faker
