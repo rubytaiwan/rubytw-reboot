@@ -1,0 +1,19 @@
+language: ruby
+sudo: false
+rvm:
+  - 2.1.0
+  - 2.2.0
+  - ruby-head
+
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+  fast_finish: true
+
+notifications:
+  email: false
+  slack: rails-rookie-camp:2yVZEEVuEO9ZPQHwkvASnCRA
+
+addons:
+  postgresql: "9.3"
+
