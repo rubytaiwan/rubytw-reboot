@@ -2,6 +2,8 @@
 
 Thank you for contributing! We love pull requests from everyone.
 
+Feel free to tackle [issues with "Help Wanted"](https://github.com/rubytaiwan/rubytw-reboot/labels/Help%20Wanted) label.
+
 Few technical guidelines to follow:
 
 1. Open an issue to discuss a new feature.
