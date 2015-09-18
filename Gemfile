@@ -19,6 +19,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'rubocop', '0.29.1', require: false
 end
 
 group :test do
