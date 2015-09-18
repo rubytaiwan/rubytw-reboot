@@ -4,6 +4,9 @@ rvm:
 - 2.1.0
 - 2.2.0
 - ruby-head
+cache:
+  bundler: true
+  bundler_args: --jobs=3 --retry=3 --without development
 matrix:
   allow_failures:
   - rvm: ruby-head
