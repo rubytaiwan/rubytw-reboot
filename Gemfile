@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'slim-rails'
+gem 'rails_utils'
 
 # frontend
 gem 'bootstrap-sass',    '~> 3.3.5'
