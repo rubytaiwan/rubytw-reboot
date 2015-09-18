@@ -59,6 +59,12 @@ GEM
       uniform_notifier (~> 1.9.0)
     byebug (5.0.0)
       columnize (= 0.9.0)
+    capybara (2.5.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -227,6 +233,8 @@ GEM
     webmock (1.21.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
@@ -236,6 +244,7 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass (~> 3.3.5)
   bullet
+  capybara
   coffee-rails (~> 4.1.0)
   did_you_mean
   factory_girl_rails
