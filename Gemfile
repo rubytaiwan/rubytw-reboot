@@ -10,6 +10,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'slim-rails'
 
+# frontend
+gem 'bootstrap-sass',    '~> 3.3.5'
+gem 'font-awesome-sass', '~> 4.4.0'
+
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
