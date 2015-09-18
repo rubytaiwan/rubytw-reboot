@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'slim-rails'
+gem 'rails_utils'
 
 group :development do
   gem 'web-console', '~> 2.0'
