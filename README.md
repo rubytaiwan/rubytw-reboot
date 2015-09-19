@@ -2,9 +2,15 @@
 
 [![Build Status](https://travis-ci.org/rubytaiwan/rubytw-reboot.svg?branch=master)](https://travis-ci.org/rubytaiwan/rubytw-reboot) [![Code Climate](https://codeclimate.com/github/rubytaiwan/rubytw-reboot/badges/gpa.svg)](https://codeclimate.com/github/rubytaiwan/rubytw-reboot)
 
+https://rubytw-production.herokuapp.com/
+
 A site for Taiwan Ruby Community!
 
 Want to contribute to this project? Read [CONTRIBUTING.md](/CONTRIBUTING.md).
+
+## Deployment
+
+Host on Heroku. See [DEPLOYMENT.md](/DEPLOYMENT.md).
 
 ## License
 
