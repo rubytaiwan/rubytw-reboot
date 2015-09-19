@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: rubytw-reboot_development
+
+test:
+  <<: *default
+  database: rubytw-reboot_test
+
+production:
+  <<: *default
+  database: rubytw-reboot_production
+  username: rubytw-reboot
+  password: <%= ENV["RUBYTW-REBOOT_DATABASE_PASSWORD"] %>
