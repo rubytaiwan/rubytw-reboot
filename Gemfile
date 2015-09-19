@@ -25,6 +25,8 @@ end
 group :test do
   gem "shoulda-matchers", require: false
   gem "webmock"
+  gem "capybara"
+  gem "database_rewinder"
 end
 
 group :development, :test do
