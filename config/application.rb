@@ -26,7 +26,7 @@ module RubytwReboot
     config.generators do |g|
       g.template_engine :slim
       g.stylesheets false
-      g.javascripts false
+      g.javascripts :js
       g.test_framework false
       g.helper false
     end
