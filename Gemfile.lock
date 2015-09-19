@@ -246,7 +246,6 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.5)
   bullet
   capybara
-  coffee-rails (~> 4.1.0)
   database_rewinder
   did_you_mean
   factory_girl_rails
