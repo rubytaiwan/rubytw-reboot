@@ -1,6 +1,7 @@
 # Contributing
 
-Thank you for contributing! We love pull requests from everyone.
+Thank you for contributing! We love pull requests from everyone. By participating
+in this project, you agree to abide by the [code of conduct](/CODE_OF_CONDUCT.md).
 
 Feel free to tackle [issues with "Help Wanted"](https://github.com/rubytaiwan/rubytw-reboot/labels/Help%20Wanted) label.
 
@@ -35,3 +36,8 @@ Run `bin/rspec` to execute the full test suite.
 https://github.com/bbatsov/rubocop/tree/v0.29.1
 
 Run style checks: `bundle exec rubocop -DR`
+
+## Contributor License Agreement
+
+If you submit a contribution to this application's source code, you hereby grant
+it to public domain. See [UNLICENSE](/UNLICENSE).
