@@ -1,11 +1,12 @@
 .navbar-center{
   display: block;
-  width: 100%;
   float: none;
   text-align: center;
 
-  > li{
-    display: inline-block;
-    float: none;
+  @media (min-width: $screen-sm-min) {
+    > li{
+      display: inline-block;
+      float: none;
+    }
   }
 }
