@@ -6,6 +6,13 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body class=page_class
-    = yield
+    header
+      nav.navbar.navbar-default
+        ul.nav.navbar-nav.navbar-center
+          li = link_to "Home", root_path
+          li = link_to "Docs", "#"
+          li = link_to "GitHub", "https://github.com/rubytaiwan/rubytw-reboot"
+          li = link_to "Meetups", "https://github.com/rubytaiwan/rubytw-reboot/wiki/Meetups"
     = flash_messages
+    = yield
     = javascript_initialization
