@@ -1,0 +1,11 @@
+.navbar-center{
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: center;
+
+  > li{
+    display: inline-block;
+    float: none;
+  }
+}
