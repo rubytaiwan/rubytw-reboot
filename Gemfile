@@ -14,6 +14,7 @@ gem "rails_utils"
 
 # web server
 gem "puma"
+gem "rack-timeout"
 
 # frontend
 gem "bootstrap-sass", "~> 3.3.5"
