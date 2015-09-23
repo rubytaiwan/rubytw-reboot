@@ -12,6 +12,9 @@ gem "jbuilder", "~> 2.0"
 gem "slim-rails"
 gem "rails_utils"
 
+# web server
+gem "puma"
+
 # frontend
 gem "bootstrap-sass", "~> 3.3.5"
 gem "font-awesome-sass", "~> 4.4.0"
