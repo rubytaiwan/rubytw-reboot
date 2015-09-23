@@ -6,6 +6,10 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body class=page_class
-    = yield
+    header
+      = render "shared/navigation_bar"
+      
     = flash_messages
+    = yield
+    
     = javascript_initialization
