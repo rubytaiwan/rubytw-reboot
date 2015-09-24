@@ -1,3 +1,22 @@
 .well.text-center
   i.fa.fa-hand-peace-o.fa-4x
   h1 Welcome to Ruby Taiwan Reboot
+.well.text-center#chat-with-us
+  .heading
+    h2 Chat With Us
+  .row.text-center
+    .col-sm-8.col-sm-offset-2
+      .col-sm-6
+        = link_to "https://rubytaiwan.slack.com", class: 'icon' do
+          = icon :slack
+        p Slack
+      .col-sm-6
+        strong Invite yourself to our Slack group!
+        hr
+        = form_for Invitation.new, html: {class: 'form-horizontal'} do |f|
+          .form-group
+            .col-sm-8.col-sm-offset-2
+              = f.text_field :email, class: 'form-control', placeholder: 'Enter Email'
+          .form-group
+            .col-sm-8.col-sm-offset-2
+              = f.submit 'Send Invite', class: 'btn btn-success btn-block', data: { disable_with: 'processing...' }
