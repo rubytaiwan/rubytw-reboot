@@ -4,3 +4,28 @@
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+#chat-with-us {
+  margin-bottom: 40px;
+
+  .heading {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  i.fa {
+    font-size: 8em;
+    text-align: center;
+  }
+
+  p {
+    margin-top: 1em;
+  }
+}
+
+a {
+  color: #fbb040;
+  &:hover {
+    color: darken(#fbb040, 5%);
+  }
+}
