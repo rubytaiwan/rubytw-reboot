@@ -10,6 +10,7 @@ gem "jquery-rails"
 gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "rails_utils"
+gem "http"
 
 # slim, markdown
 gem "slim-rails"
@@ -52,4 +53,5 @@ group :development, :test do
   gem "binding_of_caller"
   gem "did_you_mean"
   gem "faker"
+  gem "dotenv-rails"
 end
