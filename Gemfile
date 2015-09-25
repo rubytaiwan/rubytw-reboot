@@ -9,8 +9,14 @@ gem "sass-rails", "~> 5.0"
 gem "jquery-rails"
 gem "turbolinks"
 gem "jbuilder", "~> 2.0"
-gem "slim-rails"
 gem "rails_utils"
+
+# slim, markdown
+gem "slim-rails"
+gem "redcarpet"
+gem "rdiscount"
+gem "kramdown"
+
 
 # web server
 gem "puma"
