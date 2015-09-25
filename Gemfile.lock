@@ -104,6 +104,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    kramdown (1.8.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -260,6 +261,7 @@ DEPENDENCIES
   font-awesome-sass (~> 4.4.0)
   jbuilder (~> 2.0)
   jquery-rails
+  kramdown
   pg
   pry-byebug
   pry-rails
