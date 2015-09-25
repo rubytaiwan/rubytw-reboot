@@ -169,8 +169,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
     rake (10.4.2)
-    rdiscount (2.1.8)
-    redcarpet (3.3.2)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -273,8 +271,6 @@ DEPENDENCIES
   rails (= 4.2.4)
   rails_12factor
   rails_utils
-  rdiscount
-  redcarpet
   rspec-rails
   rubocop (= 0.29.1)
   sass-rails (~> 5.0)

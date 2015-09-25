@@ -13,10 +13,7 @@ gem "rails_utils"
 
 # slim, markdown
 gem "slim-rails"
-gem "redcarpet"
-gem "rdiscount"
 gem "kramdown"
-
 
 # web server
 gem "puma"
