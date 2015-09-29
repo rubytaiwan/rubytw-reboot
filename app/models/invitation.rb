@@ -1,5 +1,6 @@
+require "http"
+
 class Invitation
-  require "http"
   include ActiveModel::Model
   include ActiveModel::Validations
 
@@ -12,6 +13,7 @@ class Invitation
     return unless valid?
 
     response = HTTP.post(URL, form: options).parse
+
     if response["ok"]
       true
     else
@@ -24,7 +26,7 @@ class Invitation
 
   def options
     {
-      email: @email,
+      email: email,
       channels: ENV["SLACK_CHANNELS"],
       token: ENV["SLACK_TOKEN"],
       set_active: "true",
