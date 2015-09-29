@@ -23,9 +23,9 @@ Dir.chdir APP_ROOT do
   system "touch tmp/restart.txt"
 
   # Set up deployments
-  git remote add staging git@heroku.com:rubytw-staging.git
-  heroku join --app rubytw-staging
+  system "git remote add staging git@heroku.com:rubytw-staging.git"
+  system "heroku join --app rubytw-staging"
 
-  git remote add production git@heroku.com:rubytw-production.git
-  heroku join --app rubytw-production
+  system "git remote add production git@heroku.com:rubytw-production.git"
+  system "heroku join --app rubytw-production"
 end
