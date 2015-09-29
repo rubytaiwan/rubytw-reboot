@@ -13,3 +13,5 @@
 /tmp
 
 spec/examples.txt
+
+.env
