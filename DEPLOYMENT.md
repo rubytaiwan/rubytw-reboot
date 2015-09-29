@@ -21,3 +21,13 @@ Suppose feature branch name: `feature/awesome`
     git push production master
 
 For more information, please refer to [Heroku Docs](https://devcenter.heroku.com/articles/git).
+
+## Rollback
+
+```
+heroku releases # show history of releases
+
+heroku rollback v10 # rollback to version 10
+```
+
+For more information, please refer to [Releases and Rollback](https://devcenter.heroku.com/articles/releases).

@@ -23,6 +23,18 @@ After cloned this repository, run the setup script:
 
 `bin/setup`
 
+## How To Run Our Application In The Local Development Environment
+
+Use [foreman](https://github.com/ddollar/foreman) run as same Procfile environment.
+
+```
+$ gem install foreman # Do not install in Gemfile.
+```
+
+```
+$ foreman start # No more "rails s", do "foreman start" in your local development.
+```
+
 ## Testing
 
 Set up your development environment as previous section.
