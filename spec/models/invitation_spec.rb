@@ -6,39 +6,50 @@ RSpec.describe Invitation do
   end
 
   describe "#create_and_send" do
-    describe "valid" do
-      before do
-        stub_request(:post, Invitation::URL).to_return(
-          status: 200,
-          body: body,
-          headers: { 'content-type': ["application/json; charset=utf-8"] })
+    let(:email) { "david@example.com" }
+
+    def stub_invitation_request
+      stub_request(
+        :post, Invitation::URL
+      ).to_return(
+        status: 200,
+        body: body,
+        headers: { "content-type": "application/json" }
+      )
+    end
+
+    context "success" do
+      let(:body) { Hash(ok: true).to_json }
+
+      it "returns true without errors" do
+        stub_invitation_request
+
+        invitation = Invitation.new(email: email)
+
+        expect(invitation.create_and_send).to be_truthy
+        expect(invitation.errors).to be_blank
       end
-      let(:email) { "abc@example.com" }
+    end
 
-      context "success" do
-        let(:body) { { ok: true }.to_json }
+    context "failure" do
+      let(:body) { Hash(ok: false, error: "not_authed").to_json }
 
-        it "returns true without errors" do
-          invitation = Invitation.new(email: email)
-          expect(invitation.create_and_send).to be_truthy
-          expect(invitation.errors).to be_blank
-        end
-      end
+      it "returns false with errors" do
+        stub_invitation_request
 
-      context "failure" do
-        let(:body) { { ok: false, error: "not_authed" }.to_json }
+        invitation = Invitation.new(email: email)
 
-        it "returns false with errors" do
-          invitation = Invitation.new(email: email)
-          expect(invitation.create_and_send).to be_falsey
-          expect(invitation.errors[:email]).to be_present
-        end
+        expect(invitation.create_and_send).to be_falsey
+        expect(invitation.errors[:email]).to be_present
       end
     end
 
     context "invalid" do
+      let(:email) { nil }
+
       it "returns false with errors" do
-        invitation = Invitation.new(email: nil)
+        invitation = Invitation.new(email: email)
+
         expect(invitation.create_and_send).to be_falsey
         expect(invitation.errors[:email]).to be_present
       end
