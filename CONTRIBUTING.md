@@ -49,6 +49,26 @@ https://github.com/bbatsov/rubocop/tree/v0.29.1
 
 Run style checks: `bundle exec rubocop -DR`
 
+## Use docker containers
+
+If you prefer to develop with containers, you can use docker-composer.
+
+    docker-compose build
+    docker-compose up
+
+in another console
+
+    docker-compose run app bin/rake db:setup
+
+and you are good to go. You can issue all the commands by prefixing them with `docker-compose run app`. For example:
+
+    docker compose run app bin/rspec
+    docker conpose run app rubocop -DR
+
+ultimately you will end up creating an alias in your `.bashrc` or `.zshrc` like for example
+
+    alias dc="docker-compose run app"
+
 ## Contributor License Agreement
 
 If you submit a contribution to this application's source code, you hereby grant
