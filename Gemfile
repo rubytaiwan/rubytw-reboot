@@ -55,3 +55,5 @@ group :development, :test do
   gem "faker"
   gem "dotenv-rails"
 end
+
+gem "nokogiri", ">= 1.6.7.1"
